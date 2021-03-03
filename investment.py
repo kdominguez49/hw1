@@ -8,7 +8,7 @@ def calculate_apr(principal, interest_rate, years): #Takes in principle, interes
     years=input()
 
     if ((principle or interest_rate or years) <= 0):
-        print('FALSE')
-    else 
+        return False
+    else: 
         total=float( (principle*(1+interest_rate)**years) )
-        print (total)
+        return total
