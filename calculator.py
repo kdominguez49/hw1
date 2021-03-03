@@ -1,17 +1,17 @@
 def calculator(number1, number2, operator): #performs operations on user input
     if operator == '+':
-        print (operator1 + operator2)   
+        print (number1 + number2)   
     elif operator == '-':
-        print (operator1-operator2)
+        print (number1-number2)
     elif operator == '*':
-        print (operator1*operator2)
+        print (number1*number2)
     elif operator == '/':
-        print (operator1/operator2)
+        print (number1/number2)
     elif operator == '//':
-        print (operator1//operator2)
+        print (number1//number2)
     elif operator == '**':
-        print (operator1**operator2)
-    elif operator != '+' or '-' or '*' or '/' or '//' or '**':
+        print (number1**number2)
+    elif number != '+' or '-' or '*' or '/' or '//' or '**':
         return false
 
 def input_output(input): #asks user for input and calls calculator function to perform operations and asks if they want to exit or continue
