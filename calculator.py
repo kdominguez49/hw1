@@ -1,21 +1,21 @@
 def calculator(number1, number2, operator): #performs operations on user input
     if operator == '+':
-        return number1 + number2   
+        return float(number1 + number2)  
     elif operator == '-':
-        return number1 - number2
+        return float(number1 - number2)
     elif operator == '*':
-        return number1 * number2
+        return float(number1 * number2)
     elif operator == '/':
-        return number1 / number2
+        return float(number1 / number2)
     elif operator == '//':
-        return number1 // number2
+        return float(number1 // number2)
     elif operator == '**':
-        return number1 ** number2
-    elif number != '+' or '-' or '*' or '/' or '//' or '**':
-        return false
+        return float(number1 ** number2)
+    else:
+        return False
 
-def input_output(input): #asks user for input and calls calculator function to perform operations and asks if they want to exit or continue
-    while operation!= false :
+def input_output(): #asks user for input and calls calculator function to perform operations and asks if they want to exit or continue
+    while True :
         print ('Enter first number: ')
         number1=input()
         number1=float(number1)
@@ -24,9 +24,11 @@ def input_output(input): #asks user for input and calls calculator function to p
         number2=float(number2)
         print ('Enter operation: ')
         operator=input()
-        calculator(number1, number2, operation)
+        
+        print(calculator(number1, number2, operator))
         print('Do you wish to exit?')
-        if input== 'n' :
+        user=input()
+        if user== 'n' :
             continue
         else:
             break

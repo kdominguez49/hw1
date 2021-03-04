@@ -9,3 +9,5 @@ def calculate_time(func):
 @calculate_time
 def test():
     print('running test function')
+    time.sleep(2)
+    
